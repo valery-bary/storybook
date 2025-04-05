@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import styles from "./Accordion.module.css";
 
-const Accordion = ({ data, setSelectedGoal, multiplyChoice = false }) => {
+const Accordeon = ({ data, setSelectedGoal, multiplyChoice = false }) => {
   const [expandedIds, setExpandedIds] = useState(multiplyChoice ? [] : null);
 
   const handleAccordionClick = (id) => {
@@ -23,22 +22,22 @@ const Accordion = ({ data, setSelectedGoal, multiplyChoice = false }) => {
   };
 
   return (
-    <div className={styles["accordion"]}>
+    <div className="accordion">
       {data.map((item) => (
-        <div key={item.id} className={styles["accordion-item"]}>
+        <div key={item.id} className="accordion-item">
           <div style={{ color: "black" }}>
             <div
-              className={`${styles["accordion-header"]} ${multiplyChoice
+              className={`accordion-header ${multiplyChoice
                   ? expandedIds.includes(item.id)
-                    ? styles.expanded
+                    ? "accordion-header.expanded"
                     : ""
                   : expandedIds === item.id
-                    ? styles.expanded
+                    ? "accordion-header.expanded"
                     : ""
                 }`}
               onClick={() => handleAccordionClick(item.id)}
             >
-              <h3 className={styles["accordion-title"]}>{item.name}</h3>
+              <h3 className="accordion-title">{item.name}</h3>
             </div>
           </div>
         </div>
@@ -47,4 +46,4 @@ const Accordion = ({ data, setSelectedGoal, multiplyChoice = false }) => {
   );
 };
 
-export default Accordion;
+export default Accordeon;
