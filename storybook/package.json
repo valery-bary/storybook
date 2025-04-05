@@ -14,8 +14,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.2",
     "country-flag-icons": "^1.5.18",
+    "i18next": "^24.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "react-router-dom": "^7.4.1",
     "tailwindcss": "^4.1.2"
   },
