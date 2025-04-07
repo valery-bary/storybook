@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* LanguageChanger.jsx */
+
 .language-changer {
   position: relative;
   display: inline-block;
@@ -37,3 +39,5 @@
   width: 24px;
   height: 16px;
 }
+
+/* End */
