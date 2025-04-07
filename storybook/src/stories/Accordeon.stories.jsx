@@ -1,5 +1,4 @@
 import Accordeon from "../components/ui/Accordion/Accordeon.jsx";
-import "../App.css";
 
 export default {
   title: "Components/Accordeon",
@@ -8,10 +7,12 @@ export default {
 };
  
 export const Primary = {
+  
   args: {
-    data: ['one', 'two', 'three'],
-    setSelectedGoal: () => console.log('setSelectedGoal'),
     label: 'Accordeon',
     primary: true,
+    data: ['one', 'two', 'three'],
+    setSelectedGoal: (newId) => newId,
+    multiplyChoice: false,
   },
 };
